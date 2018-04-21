@@ -1,6 +1,5 @@
 
 $(function() {
-
     // 接受传进来的图片地址数组
     var images = ['./images/one.png','./images/two.png','./images/three.png','./images/four.png'];
     // 两个按钮
@@ -12,7 +11,7 @@ $(function() {
     setSlider(images);
 
     var allWidth = (images.length + 2) * 800;
-    lunbo.css('width',allWidth)
+    lunbo.css('width',allWidth);
     var onePageWidth = 800;
     var pages = images.length;
     var page = 1;
@@ -27,7 +26,7 @@ $(function() {
             page = pages;
         } else {
             lunbo.animate({left: '+=' + onePageWidth});
-            page--
+            page--;
         }
     })
     // 点击向右按钮
@@ -41,7 +40,7 @@ $(function() {
             lunbo.animate({left: '-=' + onePageWidth})
         } else {
             lunbo.animate({left: '-=' + onePageWidth})
-            page++
+            page++;
         }
     })
     // 轮播组件设置
