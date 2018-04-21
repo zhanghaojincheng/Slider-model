@@ -1,0 +1,53 @@
+body{
+    margin:0;
+    padding:0;
+}
+.box{
+    width:100%;
+    height:100vh;
+    background: #fff;
+    padding:50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.border{
+    width:800px;
+    height:300px;
+    background: #666;
+    font-size:0;
+    position:relative;
+    overflow:hidden;
+}
+/*三张图片的长度*/
+.lunbo{
+    min-width:800px;
+    font-size:0;
+    position:absolute;
+    top:0px;
+    left:-800px;
+}
+.img1{
+    width:800px;
+    height:300px;
+    display:inline-block;
+}
+.img{
+    width:100%;
+    height:100%;
+}
+.btn{
+    width:100px;
+    margin:20px 30px;
+    height:30px;
+    background:#CDCDB4;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+}
+.btn:hover{
+    background: #C1CDC1;
+}
